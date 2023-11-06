@@ -10,8 +10,13 @@ A [Terraform](terraform.io) provider for F5 BigIP LTM.
 ![Build Status](https://github.com/F5Networks/terraform-provider-bigip/actions/workflows/golint.yaml/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/f5devcentral/terraform-provider-bigip)](https://goreportcard.com/report/github.com/f5devcentral/terraform-provider-bigip)
 [![license](https://img.shields.io/badge/license-Mozilla-red.svg?style=flat)](https://github.com/f5devcentral/terraform-provider-bigip/blob/master/LICENSE)
-[![GitHub release(latest by date)](https://img.shields.io/github/v/release/F5Networks/terraform-provider-bigip)](https://github.com/F5Networks/terraform-provider-bigip/releases)
 
+# Fork Notes
+This repository was forked from version 1.20.0 of the official bigip provider: https://github.com/F5Networks/terraform-provider-bigip
+
+The only modification is to introduce a short, artifical wait time between obtaining and validating the token. Without this modification, the provider immediately fails with a 401 inside of my network.
+
+DO NOT use this modified provider unless you have this exact issue.
 
 # Requirements
 -	[Terraform](https://www.terraform.io/downloads.html) > 0.12.x
