@@ -10,6 +10,12 @@ description: |-
 Use the F5 BIG-IP Terraform Provider to manage and provision your BIG-IP
 configurations in Terraform. Using BIG-IP Provider you can manage LTM(Local Traffic Manager),Network,System objects and it also supports AS3/DO integration.
 
+# Important Fork Notes
+
+This is a foked version of the provider. Modifications were made for a unique use case. DO NOT USE this provider unless you are familiar with the changes and require them for your usage.
+
+Use the Verified version maintained by F5Networks.
+
 ### Requirements
 
 This provider uses the iControlREST API. All the resources are validated with BigIP v12.1.1 and above.

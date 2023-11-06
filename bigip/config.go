@@ -11,6 +11,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	bigip "github.com/f5devcentral/go-bigip"
 )
@@ -60,6 +61,8 @@ func Client(config *bigip.Config) (*bigip.BigIP, error) {
 			}
 			client.Transport.TLSClientConfig.RootCAs = rootCAs
 		}
+		log.Println("[INFO] Sleeping for 1 second")
+		time.Sleep(1 * time.Second)
 		err = client.ValidateConnection()
 		if err == nil {
 			return client, nil
