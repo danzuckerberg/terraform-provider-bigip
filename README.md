@@ -14,9 +14,7 @@ A [Terraform](terraform.io) provider for F5 BigIP LTM.
 # Fork Notes
 This repository was forked from version 1.20.0 of the official bigip provider: https://github.com/F5Networks/terraform-provider-bigip
 
-The only modification is to introduce a short, artifical wait time between obtaining and validating the token. Without this modification, the provider immediately fails with a 401 inside of my network.
-
-DO NOT use this modified provider unless you have this exact issue.
+DO NOT USE this provider. Modifications were made for a unique use case. Use the official version linked above.
 
 # Requirements
 -	[Terraform](https://www.terraform.io/downloads.html) > 0.12.x
