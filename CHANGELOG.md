@@ -1,3 +1,6 @@
+## 1.0.0 (Forked)
+- Release version.
+
 ## 0.1.1 (Forked)
 - Add an artificial delay between obtaining and validating the session.
 
